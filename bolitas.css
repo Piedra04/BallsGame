@@ -1,0 +1,102 @@
+body {
+  background: ghostwhite;
+}
+
+/*CSS de los divs*/
+#tiempo {
+  position: absolute;
+  margin: 0;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#box {
+  background-color: whitesmoke;
+  width: 500px;
+  height: 500px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid darkgrey;
+  overflow: hidden;
+}
+
+#bolaMaster {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#mensaje {
+  text-align: center;
+  position: absolute;
+  margin: 0;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*CSS para las bolas*/
+.ball {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 1s ease;
+  transform: scale(1);
+}
+
+
+.yellow {
+  background: radial-gradient(circle at 0 0,
+      hsl(60, 100%, 50%) 25%,
+      hsl(60, 100%, 30%) 70%,
+      hsl(60, 100%, 1%));
+}
+
+.blue {
+  background: radial-gradient(circle at 0 0,
+      hsl(200, 100%, 50%) 25%,
+      hsl(200, 100%, 30%) 70%,
+      hsl(200, 100%, 1%));
+}
+
+.red {
+  background: radial-gradient(circle at 0 0,
+      hsl(0, 100%, 50%) 25%,
+      hsl(0, 100%, 30%) 70%,
+      hsl(0, 100%, 1%));
+}
+
+.green {
+  background: radial-gradient(circle at 0 0,
+      hsl(120, 100%, 50%) 25%,
+      hsl(120, 100%, 30%) 70%,
+      hsl(120, 100%, 1%));
+}
+
+.purple {
+  background: radial-gradient(circle at 0 0,
+      hsl(280, 100%, 50%) 25%,
+      hsl(280, 100%, 30%) 70%,
+      hsl(280, 100%, 1%));
+}
+
+/*Animaciones de grande y pequeño*/
+.grande {
+  transition: transform 1s ease;
+  transform: scale(2);
+}
+
+.pequeño {
+  transition: transform 1s ease;
+  transform: scale(0);
+}
